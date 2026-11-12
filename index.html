@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مُعبِّئ الاستبيانات — شعبة الشؤون العلمية في حلب</title>
+  <meta name="description" content="تعبئة ملفات الوورد من ملفات الإكسل داخل المتصفح دون رفع أي ملف إلى الإنترنت">
+  <meta name="theme-color" content="#002623">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="inner">
+      <img src="assets/logo.png" alt="شعار العقاب">
+      <div class="titles">
+        <div class="kicker">مديرية أوقاف حلب · شعبة الشؤون العلمية</div>
+        <h1>مُعبِّئ الاستبيانات</h1>
+        <div class="sub">ينقل الإجابات من ملف الإكسل إلى ملفات الوورد — كل العمل داخل جهازك، ولا يُرفع أي ملف إلى الإنترنت</div>
+      </div>
+      <a class="home-link" href="/">موقع الشعبة</a>
+    </div>
+  </header>
+
+  <main id="app">
+    <div class="card"><p>جارٍ التحميل…</p></div>
+  </main>
+
+  <footer class="foot">
+    <div class="inner">
+      <div><b>شعبة الشؤون العلمية في حلب</b> · مُعبِّئ الاستبيانات — الإصدار <span id="ver">1.1</span></div>
+      <div id="storage-note">تُحفظ الاستبيانات في متصفح هذا الجهاز فقط</div>
+    </div>
+  </footer>
+
+  <input type="file" id="file-any" class="hidden">
+
+  <script src="lib/pizzip.min.js"></script>
+  <script src="lib/docxtemplater.js"></script>
+  <script src="templates.js"></script>
+  <script src="engine.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
